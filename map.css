@@ -1,0 +1,109 @@
+#map-canvas {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: -200px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+iframe{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: -200px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(136, 182, 135);
+  --primary-color-darker: rgb(85, 112, 84);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  padding:0;
+  margin:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1em;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background: #004438;
+  padding: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px
+  z-index: 6;
+}
+h1{
+  text-align:center;
+  margin:10px 0;
+  color: #004438;
+}
+.watch{
+  font-size: 1.2em;
+  margin: 25px 0 30px 0;
+  justify-content: flex-end;
+  display: flex;
+}
+h2{
+  font-size:3em;
+  font-weight:400;
+  height: 50px;
+  width: 335px;
+  color: #fff;
+}
+h2.paused{
+  color:red;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: 25px;
+}
+i{
+  color: white;
+  font-size: 4em;
+  margin: 0 10px 0 10px;
+  top:50%;
+  left:30px;
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: center;
+
+}
+i:hover{
+  cursor: pointer;
+}
+.buttons button{
+  font-size: 3em;
+  border:none;
+  margin:0 10px 0 10px;
+  color:#FFF;
+  text-transform:uppercase;
+  letter-spacing:0.1em;
+  background-color: #004438;
+}
+.buttons button:hover{
+  cursor: pointer;
+}
+.stopwatch{
+  display: flex;
+  justify-content: space-around;
+}
